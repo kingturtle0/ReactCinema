@@ -9,7 +9,7 @@
     function App() {
       const [count, setCount] = React.useState(0);
       const onClick = () => {
-        setCount(count + 1);
+        setCount((current) => current + 1);
       };
       return (
         <div>
